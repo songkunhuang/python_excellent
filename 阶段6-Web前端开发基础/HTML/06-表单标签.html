@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 把数据提交给web服务器，使用表单标签 -->
+    <!-- action 提交地址 method 提交方式 -->
+
+    <!-- name 参数名称  value 参数值 -->
+    <form action="https://www.baidu.com" method="POST">
+    <!-- GET方式是以查询参数方式提交 不安全 传输数据应该使用POST-->
+    <p>
+    <!-- for 根据指定ID名，给指定标签设置光标 -->
+        <label for="name">用户名：</label> 
+        <input type="text" name="username" id="name">
+    </p>
+    <p>
+        <label>密码：</label>
+        <input type="password" name="password">
+    </p>
+    <p>
+        <label>性别: </label>
+        <input type="radio" name="gender" value="1">男
+        <input type="radio" name="gender" value="0">女
+    </p>
+    <p>
+        <label>爱好: </label>
+        <input type="checkbox" name="hobby" value="学习">学习
+        <input type="checkbox" name="hobby" value="睡觉">睡觉
+        <input type="checkbox" name="hobby" value="打游戏">打游戏
+    </p>
+    <p>
+        <label>个人照片: </label>
+        <input type="file" name="pic">
+    </p>
+    <p>
+        <label>个人描述: </label>
+        <textarea  cols="30" rows="10" name="desc"></textarea>
+    </p>
+    <p>
+        <label>籍贯: </label>
+        <select name="position" id="">
+            <option value="福州">福州</option>
+            <option value="厦门">厦门</option>
+            <option value="泉州">泉州</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="提交">
+        <input type="submit" value="重置">
+        <input type="button" value="取消">
+    </p>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 组选择器，使用，同时设定多个类的样式 */
+        .box1, .box2, .box3{
+            width: 100px;
+            height: 100px;
+        }
+        /* 后一个样式不会覆盖前面的样式，是在前面的样式上叠加 */
+        .box1{
+            color: green;
+        }
+        .box2{
+            color:red;
+        }
+        .box3{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">第一个box</div>
+    <div class="box2">第二个box</div>
+    <div class="box3">第三个box</div>
+</body>
+</html>
